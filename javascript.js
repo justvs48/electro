@@ -46,6 +46,59 @@ cursorEffect();
 //     // }
 // });
 
+setInterval(()=>{
+    var t1=gsap.timeline();
+t1
+    .from('#s1',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
+    .from('#s2',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
+    .from('#s3',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
+    .from('#s4',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
+    .from('#s5',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
+    .from('#s6',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
+    .from('#s7',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
+},5000);
 var t1=gsap.timeline();
 t1
     .from('#s1',{
@@ -90,6 +143,13 @@ t1
         ease: "Power2.easeInOut",
         scale:0.2
     })
+    .from('#s7',{
+        y:-80,
+        duration:0.25,
+        opacity:0,
+        ease: "Power2.easeInOut",
+        scale:0.2
+    })
 
 gsap.from('#page1', {
     y: 50,
@@ -112,7 +172,64 @@ gsap.from('.elem .card', {
     scrollTrigger: {
         trigger: '.elem .card',
         start: 'top center', // when the top of the trigger hits the center of the viewport
-        end: 'bottom center', // when the bottom of the trigger hits the center of the viewport
+        scrub: 1,
+        // end: 'bottom center', // when the bottom of the trigger hits the center of the viewport
+        end: '200% center', // when the bottom of the trigger hits the center of the viewport
+        // markers:true,
         toggleActions: 'restart none none reset' // onEnter, onLeave, onEnterBack, onLeaveBack
     }
 });
+gsap.to('.heading-1',{
+    x:1500,
+    duration:4,
+    scrollTrigger:{
+        trigger:'.page3 h1',
+        start:'-100% center',
+        end:'0% center',
+        scrub:2,
+        // pin:true,
+        // pinSpacing: false,
+        // markers:true
+    }
+})
+
+gsap.to('.heading-2',{
+    x:-1400,
+    duration:1,
+    scrollTrigger:{
+        trigger:'.heading-2',
+        start:'-100% center',
+        end:'0% center',
+        scrub:2,
+        // pin:true,
+        // pinSpacing: false,
+        // markers:true
+    }
+})
+
+gsap.to('.heading-3',{
+    x:1500,
+    duration:1,
+    scrollTrigger:{
+        trigger:'.heading-3',
+        start:'-100% center',
+        end:'0% center',
+        scrub:2,
+        // pin:true,
+        // pinSpacing: false,
+        // markers:true
+    }
+})
+gsap.to('.heading-4',{
+    x:-1400,
+    duration:1,
+    scrollTrigger:{
+        trigger:'.heading-4',
+        start:'-100% center',
+        end:'0% center',
+        scrub:2,
+        // pin:true,
+        // pinSpacing: false,
+        // markers:true
+    }
+})
