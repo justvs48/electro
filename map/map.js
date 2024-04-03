@@ -4011,7 +4011,7 @@ window.onload = function() {
             getStateData(title);
             let elecdata=getStateData(title);
             mapCard.innerHTML= `  <h2>State : ${elecdata.State}</h2>
-            <p>Region: WR</p>
+            <p>Region: ${elecdata.region}</p>
             <p>Domestic: ${elecdata.domestic}</p>
             <p>Commercial: ${elecdata.commercial}</p>
             <p>Industrial Low Volt: ${elecdata.industrial_low_volt}</p>

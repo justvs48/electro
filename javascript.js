@@ -244,6 +244,6 @@ gsap.to('.cards-che',{
         scrub:2,
         pin:true,
         // pinSpacing: false,
-        markers:true
+        // markers:true
     }
 })
