@@ -278,11 +278,12 @@ a{
 {
     text-align: left;
 }
-.info-det h4,h3
+.info-det h4,.info-det h3
 {
     line-height: 7px;
     /* color: #666; */
 }
+
 .info-det h4,ul
 {
     /* text-align: left; */
