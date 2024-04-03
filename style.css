@@ -228,10 +228,19 @@ a{
     font-weight:800;
     
 }
+.noti
+{
+    color: #fff;
+    position: absolute;
+    font-size: 1vw;
+    left: 100px;
+    top: 150px;
+    text-decoration: underline;
+}
 .map-card
 {
     position: absolute;
-    top: 100px;
+    top: 140px;
     right: 100px;
     /* height:20vh ;
     width: 20vw; */
@@ -241,8 +250,10 @@ a{
     transition: opacity 0.5s ease;
     /* transition: width 0.5s ease;
     transition: height 0.5s ease; */
-
-    padding: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .map-card h2 {
@@ -259,7 +270,7 @@ a{
 
 .page5
 {
-    background: linear-gradient(to bottom, black,#291B09);
+    background: linear-gradient(to bottom, black,rgb(115, 99, 6));
     position: relative;
 }
 
@@ -313,3 +324,35 @@ a{
     height: 27vh;
     object-fit: cover;
 }
+.page6
+{
+    background: linear-gradient(to bottom,rgb(115, 99, 6),black);
+}  
+
+.chart
+{
+    margin-top: 43vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.chart .photu
+{
+    flex: 1;
+    margin: 2vw;
+}
+.chart .photu img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+.chart .det{
+    font-family: headline;
+    color: #fff;
+    flex:2;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
