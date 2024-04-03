@@ -4009,7 +4009,9 @@ window.onload = function() {
             title = event.target.getAttribute('title');
             event.target.style.fill = '#FFD700'; // Fill the clicked path with blue color
             getStateData(title);
-            mapCard.innerHTML= `<h1>${getStateData(title).State}</h1>   `
+            let elecdata=getStateData(title);
+            mapCard.innerHTML= `<div class="name">${elecdata.State}</div>
+            <div class="detname"> </div>  `
             mapCard.style.opacity = "1";
             // document.querySelector('.md').innerHTML = title;
         });

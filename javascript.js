@@ -233,3 +233,17 @@ gsap.to('.heading-4',{
         // markers:true
     }
 })
+
+gsap.to('.cards-che',{
+    x:-1000,
+    duration:10,
+    scrollTrigger:{
+        trigger:'.cards-che',
+        start:'60% center',
+        end:'200% center',
+        scrub:2,
+        pin:true,
+        // pinSpacing: false,
+        markers:true
+    }
+})
