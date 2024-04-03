@@ -4010,8 +4010,15 @@ window.onload = function() {
             event.target.style.fill = '#FFD700'; // Fill the clicked path with blue color
             getStateData(title);
             let elecdata=getStateData(title);
-            mapCard.innerHTML= `<div class="name">${elecdata.State}</div>
-            <div class="detname"> </div>  `
+            mapCard.innerHTML= `  <h2>State : ${elecdata.State}</h2>
+            <p>Region: WR</p>
+            <p>Domestic: ${elecdata.domestic}</p>
+            <p>Commercial: ${elecdata.commercial}</p>
+            <p>Industrial Low Volt: ${elecdata.industrial_low_volt}</p>
+            <p>Industrial High Volt: ${elecdata.industrial_high_volt}</p>
+            <p>Public Lighting: ${elecdata.public_lighting}</p>
+            <p>Traction: ${elecdata.traction}</p>
+            <p>Total Energy Sold: ${elecdata.total_energy_sold}</p> `
             mapCard.style.opacity = "1";
             // document.querySelector('.md').innerHTML = title;
         });

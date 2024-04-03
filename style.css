@@ -231,14 +231,25 @@ a{
 .map-card
 {
     position: absolute;
-    top: 0;
-    left: 50px;
-    height:20vh ;
-    width: 20vw;
+    top: 100px;
+    right: 100px;
+    /* height:20vh ;
+    width: 20vw; */
     background-color: #fff;
     opacity: 0;
     border-radius: 20px;
     transition: opacity 0.5s ease;
+    padding: 2vw;
+}
+
+.map-card h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.map-card p {
+    color: #666;
+    line-height: 1.6;
 }
 
 /* page 5 */
