@@ -271,6 +271,7 @@ a{
     /* height: 600px; */
     width: 100vw;
     position:absolute;
+    left:5vw;
     /* overflow: scroll; */
 
 }
